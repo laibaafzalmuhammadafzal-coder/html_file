@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms & Conditions | WorkHub</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+      background: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    /* Hamburger Button */
+    .hamburger {
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+      margin-right: 15px;
+    }
+
+    /* Side Menu */
+    .sidemenu {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      background-color: #002147;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+    }
+
+    .sidemenu a {
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      display: block;
+      transition: 0.2s;
+    }
+
+    .sidemenu a:hover {
+      background: #004080;
+    }
+
+    .sidemenu .closebtn {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 36px;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Submenu */
+    .submenu {
+      display: none;
+      background: #03315c;
+      padding-left: 20px;
+    }
+
+    .submenu a {
+      font-size: 16px;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      align-items: center;
+      background: #002147;
+      padding: 10px 20px;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    nav {
+      margin-left: auto;
+    }
+
+    /* ====== Header ====== */
+
+    
+
+    main {
+      max-width: 950px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #002147;
+      margin-top: 25px;
+    }
+
+    ul {
+      margin: 10px 0 20px 25px;
+    }
+
+   
+      /* Footer */
+    
+ .footer {
+  background: #002147; /* Dark Blue */
+  color: white;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-about, .footer-links, .footer-social {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer h3 {
+  color: #00bfff; /* Light blue heading */
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 5px 0;
+}
+
+.footer-links a,
+.footer-social a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+  color: #00bfff; /* Hover effect */
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+    
+
+
+
+.whatsapp-float {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.whatsapp-float:hover {
+  background-color: #1ebe5a;
+  color: #fff;
+}
+
+  </style>
+</head>
+<body>
+    <!-- Side Menu -->
+  <div id="mySidemenu" class="sidemenu">
+    <span class="closebtn" onclick="closeMenu()">&times;</span>
+
+    <!-- Example service -->
+    <a href="#" onclick="toggleSubmenu('electrician')"> Electrician Services</a>
+    <div id="electrician" class="submenu">
+      <a href="#">Wiring & Installation</a>
+      <a href="#">Switches & Sockets</a>
+      <a href="#">Ceiling Fan & Lights</a>
+      <a href="#">Appliance Repair</a>
+    </div>
+
+    <a href="#" onclick="toggleSubmenu('plumber')"> Plumber</a>
+    <div id="plumber" class="submenu">
+      <a href="#">Pipes & Leakage</a>
+      <a href="#">Tap & Faucet</a>
+      <a href="#">Bathroom Fittings</a>
+      <a href="#">Water Tank Cleaning</a>
+    </div>
+
+    <a href="#" onclick="toggleSubmenu('carpenter')"> Carpenter</a>
+    <div id="carpenter" class="submenu">
+      <a href="#">Furniture Repair</a>
+      <a href="#">Door & Window Fitting</a>
+      <a href="#">Woodwork</a>
+      <a href="#">Cabinets & Cupboards</a>
+    </div>
+
+    <a href="#" onclick="toggleSubmenu('cleaning')"> Cleaning</a>
+    <div id="cleaning" class="submenu">
+      <a href="#">Home Cleaning</a>
+      <a href="#">Office Cleaning</a>
+      <a href="#">Carpet & Sofa</a>
+      <a href="#">Kitchen Cleaning</a>
+    </div>
+
+    <a href="#" onclick="toggleSubmenu('shifting')">Moving & Shifting</a>
+    <div id="shifting" class="submenu">
+      <a href="#">House Shifting</a>
+      <a href="#">Office Shifting</a>
+      <a href="#">Loading/Unloading</a>
+      <a href="#">Packing & Transport</a>
+    </div>
+
+    <!-- Baqi 15 services bhi isi tarah add ki ja sakti hain -->
+  </div>
+
+  <!-- Header -->
+  <header>
+    <span class="hamburger" onclick="openMenu()">&#9776;</span>
+    <h1>WORKHUB</h1>
+    <nav>
+      <a href="HOME PAGE.html">Home</a>
+      <a href="workhubservices.html">Services</a>
+      <a href="servicesprovider.html">Register</a>
+      <a href="login.html">Login</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+
+  <!-- Header -->
+  <!-- <header>
+    <h1>Terms & Conditions – WorkHub</h1>
+  </header> -->
+
+  <!-- Main Content -->
+  <main>
+    <h1> Terms & Conditions</h1>
+    <p>
+      Welcome to <strong>WorkHub</strong> — a digital platform that connects <strong>Customers, Companies, Workers,</strong> and <strong>Freelancers</strong> to make hiring, service delivery, and payments smooth and transparent.
+      By using our services, you agree to the following Terms and Conditions.
+    </p>
+
+    <h2> Platform Overview</h2>
+    <p>
+      WorkHub acts as a bridge between customers and service providers (workers, companies, or freelancers).  
+      The platform allows users to:
+    </p>
+    <ul>
+      <li>Book professional services directly from verified workers or companies.</li>
+      <li>Receive AI-based suggestions for the best freelancers based on ratings, reviews, and budget.</li>
+      <li>Make secure payments and track the status of their booked services.</li>
+    </ul>
+
+    <h2> Service Booking & Payments</h2>
+    <ul>
+      <li>
+        To confirm a booking, the <strong>customer must pay the initial travel or visit fee</strong> for the worker.  
+        This covers the worker’s travel cost to the customer’s location.
+      </li>
+      <li>
+        Once the worker reaches the customer and assesses the work, they will inform the <strong>admin</strong> of the total cost.
+      </li>
+      <li>
+        The admin will then communicate the <strong>final service price</strong> to the customer for approval.
+      </li>
+      <li>
+        The customer can then choose to proceed with:
+        <ul>
+          <li>A <strong>Company</strong> (official service provider)</li>
+          <li>A <strong>Freelancer</strong> (recommended by AI based on ratings and reviews)</li>
+          <li>Or continue with their already booked worker</li>
+        </ul>
+      </li>
+      <li>
+        The total payment will be processed through WorkHub’s secure system.  
+        WorkHub will pay the respective service provider after service completion.
+      </li>
+    </ul>
+
+    <h2> Worker & Freelancer Responsibilities</h2>
+    <ul>
+      <li>Provide professional, high-quality, and timely service.</li>
+      <li>Clearly display their <strong>service range (minimum to maximum charges)</strong> on their profile.</li>
+      <li>Inform the admin accurately about the cost after inspection.</li>
+      <li>Maintain honesty, respect, and proper behavior during all jobs.</li>
+    </ul>
+
+    <h2> Customer Responsibilities</h2>
+    <ul>
+      <li>Provide correct details about the location, issue, and contact number.</li>
+      <li>Pay the initial booking or travel fee before the worker visit.</li>
+      <li>Respect service providers and cooperate during inspections.</li>
+      <li>Approve or reject the quoted price within a reasonable time frame.</li>
+    </ul>
+
+    <h2>AI Recommendation System</h2>
+    <p>
+      WorkHub uses Artificial Intelligence to analyze ratings, reviews, and price ranges to recommend top 5 freelancers that best fit a customer’s budget and service type.  
+      These suggestions are automated and unbiased.
+    </p>
+
+    <h2> Admin Rights & Verification</h2>
+    <ul>
+      <li>WorkHub’s admin verifies all providers before approval.</li>
+      <li>Admin can suspend or terminate any account that violates these Terms.</li>
+      <li>Admin acts as an intermediary in case of payment or service disputes.</li>
+    </ul>
+
+    <h2> Refunds & Disputes</h2>
+    <p>
+      Refunds are only applicable if:
+    </p>
+    <ul>
+      <li>The service provider fails to appear after booking confirmation.</li>
+      <li>The service was not started and cancelled before worker’s arrival.</li>
+    </ul>
+    <p>
+      All disputes will be resolved fairly by WorkHub’s support and admin team after reviewing all records.
+    </p>
+
+    <h2> Limitation of Liability</h2>
+    <p>
+      WorkHub is a platform, not a direct employer.  
+      We are not responsible for any damage, delay, or misconduct caused by independent workers or freelancers.  
+      However, we ensure fair action and account monitoring to protect all users.
+    </p>
+
+    <h2> Account Suspension</h2>
+    <p>
+      WorkHub may suspend or terminate user accounts that:
+    </p>
+    <ul>
+      <li>Provide false information</li>
+      <li>Engage in fraud, harassment, or illegal activity</li>
+      <li>Misuse payment or booking systems</li>
+    </ul>
+
+    <h2> Updates to Terms</h2>
+    <p>
+      WorkHub may update these Terms anytime to reflect changes in services or policies.  
+      Continued use of the platform means you accept the updated Terms.
+    </p>
+
+    <h2> Contact Information</h2>
+    <p>
+      For any queries, complaints, or support, please contact:
+      <br><strong>Email:</strong> support@workhub.com  
+      <br><strong>Phone:</strong> +92 300 1234567
+    </p>
+
+  </main>
+
+  <!-- footer -->
+ 
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Left side: About -->
+    <div class="footer-about">
+      <h3>About WorkHub</h3>
+      <p>WorkHub is your trusted platform to book reliable home services including cleaning, plumbing, car repair, babysitting, and more. Fast, secure, and professional.</p>
+    </div>
+
+    <!-- Middle: Quick Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="termandconditions.html">Terms & Conditions</a></li>
+        <li><a href="#">Help & Support</a></li>
+      </ul>
+    </div>
+
+    <!-- Right side: Social Media -->
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <a href="https://facebook.com" target="_blank">
+        <img src="facebook.jpg" alt="facebook" style="height: 50px;">
+      </a>  
+      <a href="https://instagram.com" target="_blank">
+        <img src="insta.jpg" alt="insta" style="height: 50px;">
+      </a> 
+      <a href="https://youtube.com" target="_blank">
+        <img src="youtube.png" alt="youtube" style="height: 50px;" width="50px">
+      </a>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 WorkHub. All Rights Reserved.</p>
+    <a href="https://wa.me/923298003382" target="_blank" class="whatsapp-float">
+      <img src="whatsapp_circle.png" alt="WhatsApp" style="height: 50px;">
+    </a>
+  </div>
+
+</footer>
+<script>
+    function openMenu() {
+      document.getElementById("mySidemenu").style.width = "250px";
+    }
+
+    function closeMenu() {
+      document.getElementById("mySidemenu").style.width = "0";
+    }
+
+    function toggleSubmenu(id) {
+      var submenu = document.getElementById(id);
+      if (submenu.style.display === "block") {
+        submenu.style.display = "none";
+      } else {
+        submenu.style.display = "block";
+      }
+    }
+</script>
+
+</body>
+</html>

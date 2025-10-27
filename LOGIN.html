@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <h2>Login</h2>
+  <!-- <form action="insert.php" method="post"> -->
+    <div>
+      <label>Username:</label><br>
+    <input type="text" name="username" id="username" >
+
+    </div>
+    
+    <div>
+       <label>Email:</label><br>
+    <input type="email" name="email" id="Email" >
+
+    </div>
+
+   
+<div>
+  <label>Password:</label><br>
+    <input type="password" name="password" id="password" >
+
+</div>
+<div>
+  <label>confirm_Password:</label><br>
+    <input type="password" name="confirm_Password" id="confirm_password" >
+
+</div>
+    
+    <p id="message"></p>
+
+    <button onclick="validateform()" type="button">Login</button>
+  <!-- </form> -->
+
+
+  
+      
+    
+  
+<script>
+  function validateform(){
+     var username=document.getElementById("username").value;
+     var Email=document.getElementById("Email").value;
+     var password=document.getElementById("password").value;
+          var confirm_password=document.getElementById("confirm_password").value;
+
+     var color="red";
+     var message="The all fileds required";
+
+    
+    //  var message="All fileds are required";
+      if(username!="" && Email!="" && password!=""){
+          message="Login Successful";
+          color="green";
+    }
+     if(confirm_password!=password)
+    {
+        message="Password do not match";
+    }
+    if(!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(Email)){
+        message="Invalid Email format";
+    }
+    if(!/^[a-zA-Z]$/.test(username))
+    {
+        message="Username must contain only letters";
+    }
+    if(password.length<6){
+        message="Password must be at least 6 characters long";
+    }
+    if(username.length<3){
+        message="Username must be at least 3 characters long";
+    }
+    
+    showMessage(message,color);
+  }
+  function showMessage(message,color){
+      var message_=document.getElementById("message");
+      message_.innerHTML=message;
+      message_.style.color=color;
+  }
+
+ 
+
+
+</script>
+
+    
+
+  
+</body>
+</html>
+
+  

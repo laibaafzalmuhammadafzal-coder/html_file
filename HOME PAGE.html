@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="styleee.css"> -->
+   <link rel="icon" href="logo.png">
+       <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script> 
+   
+</head>
+<body>
+ 
+</body>
+</html>
+  <!-- <a href="insert.php"></a>
+<!-- Side Menu -->
+  <div id="mySidemenu" class="sidemenu">
+    <span class="closebtn" onclick="closeMenu()">&times;</span>
+
+    <!-- Example service -->
+    <a href="#" onclick="toggleSubmenu('electrician')"> Electrician Services</a>
+    <div id="electrician" class="submenu">
+      <a href="#">Wiring & Installation</a>
+      <a href="#">Switches & Sockets</a>
+      <a href="#">Ceiling Fan & Lights</a>
+      <a href="#">Appliance Repair</a>
+    </div>
+
+    <a href="#" onclick="toggleSubmenu('plumber')"> Plumber</a>
+    <div id="plumber" class="submenu">
+      <a href="#">Pipes & Leakage</a>
+      <a href="#">Tap & Faucet</a>
+      <a href="#">Bathroom Fittings</a>
+      <a href="#">Water Tank Cleaning</a>
+    </div>
+
+    <a href="#" onclick="toggleSubmenu('carpenter')"> Carpenter</a>
+    <div id="carpenter" class="submenu">
+      <a href="#">Furniture Repair</a>
+      <a href="#">Door & Window Fitting</a>
+      <a href="#">Woodwork</a>
+      <a href="#">Cabinets & Cupboards</a>
+    </div>
+
+    <a href="#" onclick="toggleSubmenu('cleaning')"> Cleaning</a>
+    <div id="cleaning" class="submenu">
+      <a href="#">Home Cleaning</a>
+      <a href="#">Office Cleaning</a>
+      <a href="#">Carpet & Sofa</a>
+      <a href="#">Kitchen Cleaning</a>
+    </div>
+
+    <a href="#" onclick="toggleSubmenu('shifting')">Moving & Shifting</a>
+    <div id="shifting" class="submenu">
+      <a href="#">House Shifting</a>
+      <a href="#">Office Shifting</a>
+      <a href="#">Loading/Unloading</a>
+      <a href="#">Packing & Transport</a>
+    </div>
+
+    <!-- Baqi 15 services bhi isi tarah add ki ja sakti hain -->
+  </div>
+
+  <!-- Header -->
+  <header>
+    <span class="hamburger" onclick="openMenu()">&#9776;</span>
+    <h1>WORKHUB</h1>
+    <nav>
+      <a href="HOME PAGE.html">Home</a>
+      <a href="workhubservices.html">Services</a>
+      <a href="servicesprovider.html">Register</a>
+      <a href="login.html">Login</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- hero-section -->
+<section class="hero">
+  <h2>Find Trusted Services Near You</h2>
+  <p>Hire professionals or register as a service provider</p>
+  <!-- end hero-section -->
+
+
+  <!-- Buttons -->
+  <button class="btn-customer" onclick="openForm('serviceForm')">Hire a Service</button>
+  <button class="btn-worker" onclick="openForm('employeeForm')">Register as Employee</button>
+</section>
+
+
+
+<!-- Service Form -->
+ <!-- Popup Background -->
+<div id="popupOverlay" class="overlay" onclick="closeForm()"></div>
+
+<!-- Service Form Popup -->
+<div id="serviceForm" class="popup-form">
+  <span class="close" onclick="closeForm()">&times;</span>
+  <h3>Hire a Service</h3>
+  <form>
+    <label>Your Name:</label>
+    <input type="text" required>
+
+    <label>Service Needed:</label>
+    <input type="text" required>
+
+    <label>Location:</label>
+    <input type="text" required>
+
+    <button type="submit">Submit Request</button>
+  </form>
+</div>
+
+
+
+<!-- Employee Form Popup -->
+<div id="employeeForm" class="popup-form">
+  <span class="close" onclick="closeForm()">&times;</span>
+  <h3>Register as Employee</h3>
+  <form>
+    <label>Your Name:</label>
+    <input type="text" required>
+
+    <label>Skill/Profession:</label>
+    <input type="text" required>
+
+    <label>Experience (Years):</label>
+    <input type="number" required>
+
+    <button type="submit">Register</button>
+  </form>
+</div>
+
+
+
+ <!-- ===== Services Section ===== -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+
+      <div class="service-card">
+        <img src="plumberr.jpg" alt="Plumber">
+        <h3 style="color: white;">Plumber</h3>
+        <p style="color: white;">Expert plumbing solutions for taps, pipes and bathroom fittings.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="electritionn.jpg" alt="Electrician">
+        <h3 style="color: white;">Electrician</h3>
+        <p style="color: white;">Professional wiring, fan repair, and switchboard installation.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="cleanerr.jpg" alt="Cleaner">
+        <h3 style="color: white;">Cleaner</h3>
+        <p style="color: white;">Reliable cleaning services for homes, offices, and shops.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="be.jpg" alt="Beautician">
+        <h3 style="color: white;">Beautician</h3>
+        <p style="color: white;">Makeup, facial, and hairstyle services at your doorstep.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="carwashh.jpg" alt="Car Wash">
+        <h3 style="color: white;">Car Wash</h3>
+        <p style="color: white;">Quick and affordable car wash service with doorstep facility.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="machanic.jpg" alt="Mechanic">
+        <h3 style="color: white;">Mechanic</h3>
+        <p style="color: white;">Trusted mechanic services for cars, bikes, and repairs.</p>
+      </div>
+
+      <div class="service-card" >
+        <img src="tailorr.jpg" alt="Tailor">
+        <h3 style="color: white;">Tailor</h3>
+        <p style="color: white;">Perfect stitching and alterations for men and women.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="babyy.jpg" alt="Babysitter">
+        <h3 style="color: white;">Babysitter</h3>
+        <p style="color: white;">Trained babysitters to take care of your little ones safely.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="cookk.jpg" alt="cookk">
+        <h3 style="color: white;">Cooking & Catering</h3>
+        <p style="color: white;">Delicious homemade food and catering for events and parties.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="labour.jpg" alt="labour">
+        <h3 style="color: white;">Masonry Services</h3>
+        <p style="color: white;">Hire trusted labour workers for construction, repair, and daily tasks anytime, anywhere.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="shifting.jpg" alt="shifting">
+        <h3 style="color: white;">Moving & Shifting</h3>
+        <p style="color: white;">Smooth shifting, hassle-free moving.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="carpenter.jpg" alt="Carpenter">
+        <h3 style="color: white;">Carpenter</h3>
+        <p style="color: white;">Skilled carpenters for furniture repair, fittings, and woodwork.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="painterr.jpg" alt="painterr">
+        <h3 style="color: white;">Painter</h3>
+        <p style="color: white;">Stylish home decor with wallpapers, ceilings, and lighting.</p>
+      </div>
+
+            <div class="service-card">
+        <img src="AC.jpg" alt="AC repair">
+        <h3 style="color: white;">AC Services</h3>
+        <p style="color: white;">Fast AC installation, repair, and maintenance at your doorstep.</p>
+      </div>
+
+       <div class="service-card">
+        <img src="garding.jpg" alt="Gardening">
+        <h3 style="color: white;">Gardening Services</h3>
+        <p style="color: white;">Lawn care, plant maintenance, and garden design services.</p>
+      </div>
+
+       <div class="service-card">
+        <img src="pestt.jpg" alt="pest Control">
+        <h3 style="color: white;">Pest Control</h3>
+        <p style="color: white;">Effective pest treatments to keep your home clean and safe.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="painting.jpg" alt="Painting & Decoration">
+        <h3 style="color: white;">Painting & Decoration</h3>
+        <p style="color: white;">Professional painters for interior, exterior, and decorative finishes.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="tutring.jpg" alt="Tutoring Services">
+        <h3 style="color: white;">Tutoring Services</h3>
+        <p style="color: white;">Qualified tutors for school subjects, languages, and test prep.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="securityy.jpg" alt="Security Services">
+        <h3 style="color: white;">Security Services</h3>
+        <p style="color: white;">Professional guards, CCTV, and security systems installation.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="driverr.jpg" alt="Driver Services">
+        <h3 style="color: white;">Driver Services</h3>
+        <p style="color: white;">Hire experienced drivers for personal, office, and delivery needs.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- how its work -->
+    <section class="how-it-works">
+  <h1 style="color: #002147;">How It Works</h1>
+  <div class="steps" >
+    <div class="step" style="color: white; background-color: #002147;">
+      <h3  style="color: white";> 1. Request a Service</h3>
+      <p> Select the service you need and book online in minutes.</p>
+    </div>
+    <div class="step" style=" color: white;background-color: #002147;">
+      <h3 style="color: white;">2. We Assign a Provider</h3>
+      <p >Our system finds the best available expert near you.</p>
+    </div>
+    <div class="step" style="color: white; background-color: #002147;">
+      <h3 style="color: white;" >3. Service at Your Doorstep</h3>
+      <p >Provider comes to your location and completes the job.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- footer -->
+ 
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Left side: About -->
+    <div class="footer-about">
+      <h3>About WorkHub</h3>
+      <p>WorkHub is your trusted platform to book reliable home services including cleaning, plumbing, car repair, babysitting, and more. Fast, secure, and professional.</p>
+    </div>
+
+    <!-- Middle: Quick Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="termandconditions.html">Terms & Conditions</a></li>
+        <li><a href="#">Help & Support</a></li>
+      </ul>
+    </div>
+
+    <!-- Right side: Social Media -->
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <a href="https://facebook.com" target="_blank">
+        <img src="facebook.jpg" alt="facebook" style="height: 50px;">
+      </a>  
+      <a href="https://instagram.com" target="_blank">
+        <img src="insta.jpg" alt="insta" style="height: 50px;">
+      </a> 
+      <a href="https://youtube.com" target="_blank">
+        <img src="youtube.png" alt="youtube" style="height: 50px;" width="50px">
+      </a>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 WorkHub. All Rights Reserved.</p>
+    <a href="https://wa.me/923298003382" target="_blank" class="whatsapp-float">
+      <img src="whatsapp_circle.png" alt="WhatsApp" style="height: 50px;">
+    </a>
+  </div>
+
+</footer>
+
+  <script>
+    function hireService() {
+      alert("Redirecting to Customer Registration...");
+      // yahan tum future me customer register page link kar sakti ho
+    }
+
+    function registerWorker() {
+      alert("Redirecting to Worker Registration...");
+      // yahan tum worker register page link kar sakti ho
+    }
+    function openMenu() {
+      document.getElementById("menu").style.width = "250px";
+    }
+    function closeMenu() {
+      document.getElementById("menu").style.width = "0";
+    }
+    function toggleSubmenu(id) {
+      let submenu = document.getElementById(id);
+      submenu.style.display = (submenu.style.display === "block") ? "none" : "block";
+    }
+
+
+
+    function openForm(formId) {
+    document.getElementById("popupOverlay").style.display = "block";
+    document.getElementById(formId).style.display = "block";
+  }
+
+  function closeForm() {
+    document.getElementById("popupOverlay").style.display = "none";
+    document.getElementById("serviceForm").style.display = "none";
+    document.getElementById("employeeForm").style.display = "none";
+  }
+  </script>
+
+  <script>
+    function openMenu() {
+      document.getElementById("mySidemenu").style.width = "250px";
+    }
+    function closeMenu() {
+      document.getElementById("mySidemenu").style.width = "0";
+    }
+    function toggleSubmenu(id) {
+      let submenu = document.getElementById(id);
+      submenu.style.display = (submenu.style.display === "block") ? "none" : "block";
+    }
+
+    
+
+
+
+  </script>
+
+
+
+  
+</body>
+</html> -->

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | WorkHub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="services.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Poppins', sans-serif;
+    }
+    /* ===== Navbar ===== */
+    .navbar {
+      background-color: #0d6efd;
+    }
+    .navbar-brand {
+      font-weight: 700;
+      color: #fff !important;
+    }
+    .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+      margin-right: 15px;
+    }
+    .nav-link.active, .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== Services Section ===== */
+    .services-section {
+      text-align: center;
+      padding: 70px 20px;
+      background-color: #fff;
+    }
+    .services-section h2 {
+      color: #0d6efd;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    .services-section p {
+      color: #555;
+      margin-bottom: 50px;
+    }
+
+    /* ===== Cards ===== */
+    .service-card {
+      background: #fff;
+      border: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      transition: all 0.3s ease-in-out;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+    .service-card img {
+      border-radius: 12px 12px 0 0;
+      height: 200px;
+      object-fit: cover;
+    }
+    .service-card h5 {
+      color: #0d6efd;
+      font-weight: 600;
+      margin-top: 15px;
+    }
+    .service-card p {
+      font-size: 15px;
+      color: #555;
+    }
+    .service-card button {
+      background-color: #0d6efd;
+      border: none;
+      color: #fff;
+      border-radius: 30px;
+      padding: 8px 18px;
+      margin-bottom: 20px;
+      transition: 0.3s;
+    }
+    .service-card button:hover {
+      background-color: #0b5ed7;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background-color: #0d6efd;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">WorkHub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Services Section ===== -->
+  <section class="services-section">
+    <div class="container">
+      <h2>Our Services</h2>
+      <p>Choose from our trusted and professional home service providers</p>
+
+      <div class="row g-4">
+        <!-- Electrician -->
+        <div class="col-md-4">
+          <div class="card service-card">
+            <img src="images/electrician.jpg" class="card-img-top" alt="Electrician">
+            <div class="card-body">
+              <h5>Electrician</h5>
+              <p>Expert electricians for all electrical work and repairs.</p>
+              <button>Hire Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Plumber -->
+        <div class="col-md-4">
+          <div class="card service-card">
+            <img src="images/plumber.jpg" class="card-img-top" alt="Plumber">
+            <div class="card-body">
+              <h5>Plumber</h5>
+              <p>Skilled plumbers for pipe fitting, leak repairs, and bathroom fitting.</p>
+              <button>Hire Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Carpenter -->
+        <div class="col-md-4">
+          <div class="card service-card">
+            <img src="images/carpenter.jpg" class="card-img-top" alt="Carpenter">
+            <div class="card-body">
+              <h5>Carpenter</h5>
+              <p>Professional carpenters for furniture making and repairs.</p>
+              <button>Hire Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Cleaner -->
+        <div class="col-md-4">
+          <div class="card service-card">
+            <img src="images/cleaner.jpg" class="card-img-top" alt="Cleaner">
+            <div class="card-body">
+              <h5>Cleaner</h5>
+              <p>Trained cleaners for home, office, and deep cleaning services.</p>
+              <button>Hire Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Beautician -->
+        <div class="col-md-4">
+          <div class="card service-card">
+            <img src="images/beautician.jpg" class="card-img-top" alt="Beautician">
+            <div class="card-body">
+              <h5>Beautician</h5>
+              <p>Book professional beauticians for makeup and hair styling.</p>
+              <button>Hire Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Mechanic -->
+        <div class="col-md-4">
+          <div class="card service-card">
+            <img src="images/mechanic.jpg" class="card-img-top" alt="Car Mechanic">
+            <div class="card-body">
+              <h5>Car Mechanic</h5>
+              <p>Experienced mechanics for car repairs and maintenance.</p>
+              <button>Hire Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    &copy; 2025 WorkHub. All Rights Reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
