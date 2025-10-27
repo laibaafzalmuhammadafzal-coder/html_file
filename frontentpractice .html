@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <style>
+
+  </style>
+</head>
+<body>
+  <!-- navbar or nav class hai or ye must ay gi bg-warning color hai color ka name
+   ose k bad navbar-expand-sm navbar ko expand kartaa jab hum button pey click kara -->
+  <nav class="navbar navbar-light bg-warning navbar-expand-sm">
+    <!-- conrainar mey sara data rakhaa gy ye left right equal margin da da ga -->
+    <div class="container">
+      <!-- navbar-brand logo k liyaa use hotaa -->
+      <a class="navbar-brand" href="#">Logo</a>
+      <!-- menu button banana k liyaa navbar-toggler or navbar-toggler-icon use ho ga -->
+
+      <button class="navbar-toggler" data-bs-toggle="collapse"  data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- collapse se sari values chupe jay gi or navbar-collapse se wapis aa jay gi -->
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About US</a></li>            
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+           <li class="nav-item"><a class="nav-link" href="#">Login/Sign Up</a></li>
+       </ul>
+      </div>
+    </div>
+</nav>
+<!-- navbar end -->
+ <!-- slider-start -->
+  <!-- carousel:      slider banata 
+   slider:          transition animation enable karta
+   carousel-dark:     dark theme apply karta
+   id:slider         ye unique id deta ye class nai a
+   data-bs-ride="carousel"        Ye Bootstrap attribute hai, class nahi. Iska kaam 
+                                hai batana ke carousel automatically chalna chahiye (auto-slide). 
+data-bs-interval="500"           Iska kaam hai batana ke har slide 
+                                  500 milliseconds (0.5 second) me change ho jaye.-->
+  <div class="carousel slide carousel-dark" id="slider" data-bs-ride="carousel" data-bs-interval="500">
+    <!-- carousel-indicator: ye class un 3 dots ko create karti jo nicha dikhai deta
+     span class=active : ye class un elements pey lagi joo currently visible ho yaha pehli slide or pehla dot dono pey active hai
+     data-bs-target & data-bs-slide-to="0"  : ye dono classes batati hai k ye indicator kis slide ko control kara ga or kaha laa k jay ga -->
+    <div class="carousel-indicators">
+      <span class="active" data-bs-target="#slider" data-bs-slide-to="0"></span>
+      <span data-bs-target="#slider" data-bs-slide-to="1"></span>
+      <span data-bs-target="#slider" data-bs-slide-to="2"></span>
+    </div>
+    <!-- carousel-inner: ye class slider k andar images ko rakhta hai
+     carousel-item: ye class har image ko represent karti hai
+     active: ye class us image ko represent karti hai jo currently visible hai
+      -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="img-fluid" src="home.jpg" alt="">
+        <div class="carousel-caption">
+          <button class="btn btn-success">Signup/Login</button>
+        </div>
+</div>
+<div class="carousel-item">
+  <img class="img-fluid" src="home.jpg" alt="">
+  </div>
+  <div class="carousel-item">
+    <img class="img-fluid" src="home.jpg" alt="">
+  </div> 
+      </div>
+    <!-- carousel-control-prev: ye class previous button create karti hai
+      data-bs-target="#slider" : ye attribute batata hai k ye button kis slider ko control kar raha hai
+      data-bs-slide="prev" : ye attribute batata hai k ye button previous slide pey jay ga
+       -->
+      <button class="carousel-control-next" data-bs-target="#slider" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <button class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+    </div>
+
+
+    <!-- slider-end -->
+     <!-- Grid-start -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm text-bg-success">
+            col-sm-2 text-bg-success
+          </div>
+          <div class="col-sm text-bg-warning">
+            col-sm-2 text-bg-success
+          </div>
+          <div class="col-sm text-bg-success">
+            col-sm-2 text-bg-success
+          </div>
+          <div class="col-sm text-bg-success">
+            col-sm-2 text-bg-success
+          </div>
+          <div class="col-sm text-bg-success">
+            col-sm-2 text-bg-success
+          </div>
+          <div class="col-sm text-bg-success">
+            col-sm-2 text-bg-success
+          </div>
+          <div class="col-sm text-bg-success">
+            col-sm-2 text-bg-success
+          </div>
+          <div class="col-sm text-bg-success">
+            col-sm-2 text-bg-success
+          </div><div class="col-sm text-bg-success">
+            col-sm-2 text-bg-success
+          </div><div class="col-sm text-bg-success">
+            col-sm-2 text-bg-success
+          </div><div class="col-sm text-bg-success">
+            col-sm-2 text-bg-success
+          </div><div class="col-sm text-bg-success">
+            col-sm-2 text-bg-success
+          </div><div class="col-sm text-bg-success">
+            col-sm-2 text-bg-success
+          </div><div class="col-sm text-bg-success">
+            col-sm-2 text-bg-success
+          </div>
+        </div>
+      </div>
+      <!-- Grid-end -->
+       <!-- Manually grid -->
+       <div class="row">
+        <div class="col-sm-4 col-md-3 col-lg-2 text-bg-success ">
+          col-sm-4 col-md-3 col-lg-2
+        </div>
+        <div class="col-sm-4 col-md-3 col-lg-2 text-bg-success ">
+          col-sm-4 col-md-3 col-lg-2
+        </div>
+        <div class="col-sm-4 col-md-3 col-lg-2 text-bg-success ">
+          col-sm-4 col-md-3 col-lg-2
+        </div>
+        <div class="col-sm-4 col-md-3 col-lg-2 text-bg-success ">
+          col-sm-4 col-md-3 col-lg-2
+        </div>
+        <div class="col-sm-4 col-md-3 col-lg-2 text-bg-success ">
+          col-sm-4 col-md-3 col-lg-2
+        </div>
+        <div class="col-sm-4 col-md-3 col-lg-2 text-bg-success ">
+          col-sm-4 col-md-3 col-lg-2
+        </div>
+        <div class="col-sm-4 col-md-3 col-lg-2 text-bg-success ">
+          col-sm-4 col-md-3 col-lg-2
+        </div>
+       </div>
+       <!-- Manually grid-end -->
+
+       <!-- card-strat -->
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <div class="card">
+                <img class="card-img-top" src="electrition.jpg" alt="">
+                <div class="card-body">
+                  <h4 class="card-title">Title</h4>
+                  <p class="card-subtitle">Show subtitle</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    In reprehenderit molestiae veritatis dignissimos placeat ipsam quae sed, 
+                    quas rerum distinctio ea, odio ab totam et sapiente numquam. Illum, iste in.</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="card">
+                  <img class="card-img-top" src="plumber.jpg" alt="">
+                  <div class="card-body">
+                    <h4 class="card-title">Plumber</h4>
+              <p class="card-subtitle">show subtitle</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Fugiat unde nulla dolores dolorum maiores consectetur ipsam voluptatum molestias fuga, quaerat obcaecati id accusamus mollitia nam beatae? 
+              Ad alias id deserunt.</p>    
+                       </div>
+
+                  </div>
+              </div>
+
+              <div class="col-sm">
+                <!-- header -->
+                <div class="card">
+                  <img class="card-img-top" src="carmachanic.jpg" alt="">
+                  <!-- body of card -->
+                  <div class="card-body">
+                    <h4 class="card-title">carmachanic</h4>
+                    <p class="card-subtitle">show subtitle</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                       Laudantium laboriosam atque nihil provident voluptas. Rerum quisquam sit fugiat ut corporis, dicta doloremque minima accusantium impedit 
+                      accusamus delectus deleniti debitis dolor.</p>
+                  </div>
+                  <!-- card-footer -->
+                   <div class="card-footer">Lorem ipsum dolor sit, amet consectetur
+                     adipisicing elit. Ea, dolores?.</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- card-end -->
+
+
+        <!-- dailog-model-start -->
+         <button class="btn btn-success" data-bs-target="#dailog" data-bs-toggle="modal">
+          Show Dialog
+         </button>
+         <div class="modal fade" id="dailog" data-bs-backdrop="static">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Some title</h4>
+                <button class="btn-close" data-bs-dismiss="modal">
+
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eaque temporibus,
+                   dolores aperiam odio voluptatibus quia fugit repudiandae assumenda! Nemo asperiores cumque ducimus recusandae
+                   id deserunt unde voluptate totam accusantium!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laborum fugiat fuga architecto provident eveniet deleniti quo ipsa earum minus, quis explicabo quos consequuntur ullam perspiciatis in sint esse porro.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore voluptatem distinctio repellat fuga laboriosam unde ipsam nobis dolorum a, autem aliquam, iste sint, veritatis nisi. Debitis maiores nobis molestias a.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti impedit fugiat quisquam esse facere, culpa laborum eius, ex, aspernatur eligendi eum aliquam blanditiis. Inventore neque sit provident nesciunt, expedita debitis.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus distinctio porro voluptatem commodi omnis labore dolorem a architecto nam quod error asperiores unde inventore laboriosam, at, deleniti sunt optio maxime!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur neque rerum eaque, modi magnam perferendis omnis, excepturi reiciendis placeat minus maxime hic voluptatem tempore, quasi accusamus! Vitae blanditiis praesentium odio.</p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal">okay</button>
+              </div>
+            </div>
+          </div>
+
+         </div>
+  <!--dailog- model-end -->
+        
+
+ 
+
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
