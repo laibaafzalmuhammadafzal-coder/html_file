@@ -13,7 +13,7 @@
 <body>
   <!-- navbar or nav class hai or ye must ay gi bg-warning color hai color ka name
    ose k bad navbar-expand-sm navbar ko expand kartaa jab hum button pey click kara -->
-  <nav class="navbar navbar-light bg-warning navbar-expand-sm">
+  <nav class="navbar  bg-warning navbar-expand-sm">
     <!-- conrainar mey sara data rakhaa gy ye left right equal margin da da ga -->
     <div class="container">
       <!-- navbar-brand logo k liyaa use hotaa -->
@@ -261,15 +261,15 @@ data-bs-interval="500"           Iska kaam hai batana ke har slide
 
 </head>
 <body>
-  <navbar class="navbar navbar-expand-sm ">
-    <div class="container">
+  <navbar class="navbar navbar-expand-sm bg-warning">
+    <div class= "container">
       <a class="navbar-brand" href="#">logo</a>
-        <button data-bs-toggle="collapse" data-bs-target="#menu">
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" >
           <span class="navbar-toggler-icon"></span>
         </button>
-              </div>
+            
       <div class=" collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ms auto">
+        <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="#">About US</a></li>            
@@ -279,7 +279,46 @@ data-bs-interval="500"           Iska kaam hai batana ke har slide
       </div>
     </div>
   </navbar>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="card-header">
+          <img class="card-img-top" src="electrition.jpg" alt="">
+        <div class="card-body">
+          <h1 class="card-title">title</h1>
+          <p class="card-subtitle">subtitle</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio est ducimus quam quo eum doloremque voluptas itaque provident laboriosam eveniet quos placeat explicabo aspernatur atque
+            , quidem dicta possimus voluptatibus accusantium!</p>
+
+        </div>
+
+        </div>
+       
+
+    </div>
+     <div class="col-sm">
+          <div class="card-header">
+            <img class="card-img-top" src="plumber.jpg" alt="">
+            <div class="card-body">
+              <h1 class="card-title"> plumbe </h1>
+              <p class="card-subtitle">subtitle</p>
+              <p>Lorem, ipsum dolor sit amet consectetur 
+                adipisicing elit. Molestiae illo rem repellat aspernatur aliquid. Beatae alias dignissimos dolores fugit labore dolore ab, unde laboriosam veniam distinctio, et illum ipsam commodi.</p>
+            </div>
+          </div>
+        </div>
+        
+  </div> 
   
+
+  <button class="btn btn-success" data-bs-target="#dailog" data-bs-toggle="modal">
+
+  </button>
+
+
+
+</body>
+</html>
 </body>
 </html>
 
@@ -289,6 +328,54 @@ data-bs-interval="500"           Iska kaam hai batana ke har slide
 
 
 
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+   <script src="js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <!-- Card-start -->
+   <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card-header">
+          <img class="card-img-top" src="electrition.jpg" alt="elec">
+        </div>
+        <div class="card-body">
+          <h1 class="card-title">electrition</h1>
+          <h1 class="card-subtitle">sub-title</h1>
+          <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur, vitae ullam cupiditate modi necessitatibus a maxime saepe hic nihil!
+             Totam sunt vel pariatur perferendis eligendi facilis blanditiis labore delectus?</p>
+
+
+      </div>
+    </div>
+   </div>
+   <!-- Card-end -->
+
+   <!-- form-start-->
+    <div class="container">
+      <h1> Bootstrap form</h1>
+      <div class="row">
+        <div class="col">
+
+        </div>
+        <label class="form-label" for="password">Password</label>
+        <input class="form-control is valid" type="password" readonly id="password" name="password" placeholder="Enter email">
+        
+      </div>
+    <!-- form-end -->
+  
+</body>
+</html>
 
 
 
