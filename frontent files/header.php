@@ -43,6 +43,14 @@
         width: 100%;
         box-shadow: none;
       }
+      /* services css */
+      :root{ --accent:#6f42c1; }
+      body{ font-family:Inter,system-ui; background:#fff; }
+      .header-bg{ background:linear-gradient(165deg, rgba(92, 19, 230, 0.62), hsla(251, 91%, 22%, 0.02)); padding:3.5rem 0; }
+      .service-box{ border-radius:.75rem; padding:1.5rem; background:#fff; box-shadow:0 4px 14px rgba(0,0,0,.05); transition:.2s; }
+      .service-box:hover{ transform:translateY(-4px); box-shadow:0 6px 20px rgba(0,0,0,.08); }
+      .service-box img{ width:100%; height:160px; object-fit:cover; border-radius:.6rem; }
+      .breadcrumb a{ text-decoration:none; }
     </style>
 
 </head>
@@ -50,19 +58,29 @@
 <body>
 
 <!-- ✅ NAVBAR START -->
+<!-- ✅ NAVBAR START -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
 
+    <!-- Logo -->
     <a class="navbar-brand" href="home.php">
-       <img src="workhublogo.jpg" style="height: 50px;">
+      <img src="workhublogo.jpg" style="height: 50px;">
     </a>
 
+    <!-- Mobile Toggle -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="menu">
 
+      <!-- ✅ SEARCH BAR (added here) -->
+      <form class="d-flex ms-lg-3 me-lg-5 w-50">
+        <input class="form-control me-2" type="search" placeholder="Search services..." aria-label="Search">
+        <button class="btn btn-primary" type="submit">Search</button>
+      </form>
+
+      <!-- ✅ NAV LINKS -->
       <ul class="navbar-nav ms-auto">
 
         <li class="nav-item">
@@ -76,7 +94,6 @@
           <div class="mega-menu bg-white p-4 shadow">
             <?php include "mega-menu.php"; ?>
           </div>
-
         </li>
 
         <li class="nav-item">
@@ -98,6 +115,8 @@
     </div>
   </div>
 </nav>
+<!-- ✅ NAVBAR END -->
+
 <!-- ✅ NAVBAR END -->
 
 <!-- ✅ Mega Menu (Mobile Toggle Script) -->
